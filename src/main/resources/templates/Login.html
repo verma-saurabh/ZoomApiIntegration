@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/site.css"/>
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -16,12 +17,13 @@
     <![endif]-->
 </head>
 <body>
-<div class="container">
+<div class="loginPage">
 
-<a value="Login via zoom"
-           th:href="@{https://zoom.us/oauth/authorize(client_id=${clientId},response_type=${response_type},redirect_uri=${redirect_uri})}"/>
 
-Login via zoom
+    <a th:href="@{https://zoom.us/oauth/authorize(client_id=${clientId},response_type=${response_type},redirect_uri=${redirect_uri})}"
+       rel="noopener noreferrer"><img
+            src="https://marketplacecontent.zoom.us/zoom_marketplace/img/add_to_zoom.png" height="32"
+            alt="Add to ZOOM"/></a>
 </div>
 <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
