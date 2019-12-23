@@ -20,12 +20,13 @@
     <div class="page-header">
         <h1>Welcome to your Meetings</h1>
     </div>
+    <div class="input-group">
+        <a value="Schedule Meeting" th:href="@{/User/createMeeting}"/>Schedule Meeting<br>
+        <a value="Check UpComming Meetings" th:href="@{/User/getFutureMeetings}"/>Check UpComming Meetings<br>
+        <a value="Check Your Profile" th:href="@{/User/getUserProfile}"/>Check Your Profile<br>
+    </div>
+
     <div>
-        <div class="input-group">
-            <a value="Schedule Meeting" th:href="@{/User/createMeeting}"/>Schedule Meeting<br>
-            <a value="Check UpComming Meetings" th:href="@{/User/getFutureMeetings}"/>Check UpComming Meetings<br>
-            <a value="Check Your Profile" th:href="@{/User/getUserProfile}"/>Check Your Profile<br>
-        </div>
 
         <div class="response">
 
@@ -49,6 +50,5 @@
 <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="js/site.js"></script>
 </body>
 </html>

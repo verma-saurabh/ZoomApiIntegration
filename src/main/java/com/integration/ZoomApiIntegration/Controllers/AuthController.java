@@ -15,7 +15,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.HashMap;
@@ -70,7 +69,6 @@ public class AuthController {
             headers.forEach((k, v) -> request.addHeader(k, v));
             response = httpClient.execute(request);
 
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -103,9 +101,7 @@ public class AuthController {
             meeting.setJoin_url(m.getString("join_url"));
             meetings.add(meeting);
         }
-
         model.addAttribute("meetings", meetings);
-
         return "User";
     }
 }

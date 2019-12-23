@@ -1,6 +1,5 @@
 package com.integration.ZoomApiIntegration.Utils;
 
-import com.integration.ZoomApiIntegration.Constants.Constants;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
@@ -45,6 +44,5 @@ public class HttpUtil {
             e.printStackTrace();
         }
         return EntityUtils.toString(response.getEntity());
-        //return response.getEntity().toString();
     }
 }
